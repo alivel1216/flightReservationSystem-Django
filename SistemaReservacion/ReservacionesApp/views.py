@@ -5,7 +5,7 @@ from django.shortcuts import render, HttpResponse
     #return render(request, 'ReservacionesApp/home.html')
 
 def reservaciones(request):
-    return render(request, 'ReservacionesApp/home.html')
+    return render(request, 'ReservacionesApp/reservas.html')
 
 def pagos(request):
     return HttpResponse("Pagos")
