@@ -12,3 +12,6 @@ def pagos(request):
 
 def consultas(request):
     return HttpResponse("Consultas")
+
+def vueloss(request):
+    return HttpResponse("Vuelos")
