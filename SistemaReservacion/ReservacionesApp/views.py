@@ -11,7 +11,10 @@ def pagos(request):
     return render(request, 'ReservacionesApp/pagos.html')
 
 def consultas(request):
-    return HttpResponse("Consultas")
+    return render(request, 'ReservacionesApp/consultas.html')
 
-def vueloss(request):
-    return HttpResponse("Vuelos")
+def vuelos(request):
+    return render(request, 'ReservacionesApp/vuelos.html')
+
+def configuracion(request):
+    return render(request, 'ReservacionesApp/configuracion.html')
