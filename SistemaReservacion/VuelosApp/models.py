@@ -11,7 +11,7 @@ class Vuelos(models.Model):
     updated=models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        verbose_name='vuelos'
+        verbose_name='vuelo'
         verbose_name_plural='vuelos'
 
     def __str__(self):

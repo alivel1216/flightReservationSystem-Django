@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 
+
 # Create your views here.
 def home(request):
     return render(request, 'ReservacionesApp/index.html')
@@ -13,8 +14,8 @@ def pagos(request):
 def consultas(request):
     return render(request, 'ReservacionesApp/consultas.html')
 
-def vuelos(request):
-    return render(request, 'ReservacionesApp/vuelos.html')
+
+
 
 def configuracion(request):
     return render(request, 'ReservacionesApp/configuracion.html')
