@@ -13,7 +13,8 @@
                         <h6 class="font-weight-bold mb-0">Pasajeros</h6>
                     </div>
                     <div class="card-body pt-1">
-                        <form>
+                        <form method="POST" >
+                            <!--
                             <div class="form-row d-flex border-bottom py-2">
                                 <div class="form-group col-md-6">
                                     <input class="form-control mr-3" type="number" placeholder="Adultos"
@@ -67,11 +68,13 @@
                                     Tarjeta de credito
                                 </label>
                             </div>
+                            <p>Total a pagar</p>-->
+                            {% csrf_token %}
+                            {{ form.as_p}}
                             <div class="form-group d-flex py-2">
                                 <button type="submit"
-                                    class="btn btn-primary mb-2 d-flex border-bottom py-2">Submit</button>
+                                class="btn btn-primary mb-2 d-flex border-bottom py-2">Submit</button>
                             </div>
-                            <p>Total a pagar</p>
                         </form>
                     </div>
                 </div>
