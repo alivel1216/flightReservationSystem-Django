@@ -80,5 +80,7 @@ a:hover {
   /*display: flex;*/
   align-items: center;
   justify-content: center;
-  width: 1px;
+  /*padding-right: 60px;*/
+  margin-left: 320px;
+  width: 500px;
 }

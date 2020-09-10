@@ -18,8 +18,7 @@ def reservaciones(request):
     context = {'form':form}
     return render(request, 'ReservacionesApp/reservas.html', context)
 
-def pagos(request):
-    return render(request, 'ReservacionesApp/pagos.html')
+
 
 def consultas(request):
     return render(request, 'ReservacionesApp/consultas.html')

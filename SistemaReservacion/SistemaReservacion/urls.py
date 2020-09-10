@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ReservacionesApp.urls')),
     path('vuelos/', include('VuelosApp.urls')),
+    path('pagos/', include('PagosApp.urls')),
+    path('registro/', include('usersApp.urls')),
 ]
