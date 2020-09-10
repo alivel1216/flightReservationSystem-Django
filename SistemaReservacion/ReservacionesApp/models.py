@@ -1,7 +1,6 @@
 from django.db import models
 from django import forms
-from django.forms import ModelForm, IntegerField
-
+from django.forms import ModelForm
 # Create your models here.
 
 COUNTRIES = [

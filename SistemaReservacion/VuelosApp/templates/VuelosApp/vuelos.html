@@ -3,12 +3,30 @@
 
 {% block content %}
 
-    {% for vuelo in vuelos %}
-<div style="text-align:center"><p >
-    <p><strong>Origen: </strong>{{vuelo.origen}}</p>
-    <p><strong>Destino: </strong> {{vuelo.destino}}</p>
-    <p><strong>Fecha: </strong> {{vuelo.fechaViaje}}</p>
-    <p><strong>numAsientos: </strong>{{vuelo.numAsientos}}</p>
-</p></div>
-    {% endfor %}
+{% for vuelo in vuelos %}
+<section class="">
+    <div class="container " >
+        <!--<div class="row">-->
+            <div class="abs-center col my-3" >
+                <!--<div class="col-lg-7 my-3" >-->
+                    <div class="card rounded">
+                        <div class="card-header bg-light">
+                            <h6 class="font-weight-bold mb-0">Vuelos Disponibles</h6>
+                        </div>
+                        <div style="text-align:center">
+                            <p>
+                            <p><strong>Origen: </strong>{{vuelo.origen}}</p>
+                            <p><strong>Destino: </strong> {{vuelo.destino}}</p>
+                            <p><strong>Fecha: </strong> {{vuelo.fechaViaje}}</p>
+                            <p><strong>numAsientos: </strong>{{vuelo.numAsientos}}</p>
+                            </p>
+                        </div>
+                    </div>
+                <!--</div>-->
+            </div>
+
+<!--        </div>-->
+    </div>
+</section>
+{% endfor %}
 {% endblock %}

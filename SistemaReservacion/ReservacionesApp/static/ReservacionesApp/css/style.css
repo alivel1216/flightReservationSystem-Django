@@ -75,4 +75,10 @@ a:hover {
         border: 0;
     }
   }
-  
+ 
+.abs-center {
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  width: 1px;
+}
