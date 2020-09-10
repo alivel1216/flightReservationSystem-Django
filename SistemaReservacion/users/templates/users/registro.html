@@ -1,1 +1,9 @@
 <h1>Registro</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <div class="form-group d-flex py-2">
+        <button type="submit"
+        class="btn btn-primary mb-2 d-flex border-bottom py-2" >Submit</button>
+    </div>
+</form>
