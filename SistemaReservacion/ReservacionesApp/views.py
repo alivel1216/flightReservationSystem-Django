@@ -23,8 +23,3 @@ def reservaciones(request):
 def consultas(request):
     return render(request, 'ReservacionesApp/consultas.html')
 
-
-
-
-def configuracion(request):
-    return render(request, 'ReservacionesApp/configuracion.html')

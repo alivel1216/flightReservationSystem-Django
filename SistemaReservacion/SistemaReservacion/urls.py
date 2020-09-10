@@ -21,5 +21,5 @@ urlpatterns = [
     path('', include('ReservacionesApp.urls')),
     path('vuelos/', include('VuelosApp.urls')),
     path('pagos/', include('PagosApp.urls')),
-    path('registro/', include('usersApp.urls')),
+    path('registro/', include('users.urls')),
 ]
