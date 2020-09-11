@@ -2,10 +2,49 @@
 {% load static %}
 
 {% block content %}
-<h1>Registro</h1>
-        {% csrf_token %}
-        {{ form.as_p}}
-   
+<form method="POST" action="">
+        <div class="form-group text-center">
+                <h1>Registrarse</h1>
+        </div>
+        
+                    <div class="form-group mx-sm-4 pt-3">
+                        {{form.username}}
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        {{form.first_name}}
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        {{form.last_name}}
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        {{form.email}}
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        {{form.password1}}
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        {{form.password2}}
+                    </div>
+                
+        <!--{% csrf_token %}
+        {{form.username.label}}
+        {{form.username}}
+        {{form.first_name.label}}
+        {{form.first_name}}
+        {{form.last_name.label}}
+        {{form.last_name}}
+        {{form.email.label}}
+        {{form.email}}
+        {{form.password1.label}}
+        {{form.password1}}
+        {{form.password2.label}}
+        {{form.password2}}-->
+        <div class="form-group pb-3">
+                <button type="submit" class="btn btn-primary  border-bottom">Submit</button>
+        </div>
+</form>
+
+
 
 
 {% endblock %}

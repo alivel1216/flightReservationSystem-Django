@@ -16,18 +16,10 @@ class createdUserForm(UserCreationForm):
             'password2'
         ]
         widgets = {
-            'username': forms.TextInput(attrs={ 'type':'text'}),
-            'first_name': forms.TextInput(attrs={ 'type':'text'}),
-            'last_name': forms.TextInput(attrs={ 'type':'text'}),
-            'email': forms.TextInput(attrs={'type':'email'}),
-            'password1': forms.TextInput(attrs={'type':'password'}),
-            'password2': forms.TextInput(attrs={'type':'password'})
+            'username': forms.TextInput(attrs={ 'class':'form-group  ','type':'text', 'placeholder':'Nombre de usuario'}),
+            'first_name': forms.TextInput(attrs={'class':'form-group  ', 'type':'text'}),
+            'last_name': forms.TextInput(attrs={'class':'form-group  ', 'type':'text'}),
+            'email': forms.TextInput(attrs={'class':'form-group  ','type':'email'}),
+            'password1': forms.TextInput(attrs={'class':'form-group  ','type':'password'}),
+            'password2': forms.TextInput(attrs={'class':'form-group  ','type':'password'})
         }
-        #widgets = {
-        #    'username': forms.TextInput(attrs={'class':'zmdi zmdi-account', 'type':'text'}),
-        #    'first_name': forms.TextInput(attrs={'class':'zmdi zmdi-account', 'type':'text'}),
-        #    'last_name': forms.TextInput(attrs={'class':'zmdi zmdi-account', 'type':'text'}),
-        #    'email': forms.TextInput(attrs={'class':'zmdi zmdi-email', 'type':'email'}),
-        #    'password1': forms.TextInput(attrs={'class':'zmdi zmdi-lock', 'type':'password'}),
-        #    'password2': forms.TextInput(attrs={'class':'zmdi zmdi-lock-outline', 'type':'password'})
-        #}

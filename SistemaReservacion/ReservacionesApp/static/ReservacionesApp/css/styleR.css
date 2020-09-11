@@ -1,23 +1,47 @@
 body {
-  background-image: url(../img/españa.jpg);
+  /*background-image: url(../img/españa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  color: #06503a;
+  background-attachment: fixed;*/
+  background-color: rgba(0,0,0,.3);
+ color: rgba(0,0,0,0.568);
 }
 
 .formulario {
-  background:rgba(0, -0, -0, -1);
+  background:rgba(0,0,0,.3);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0,-0,-0,-0, -0.568);
-  color: white;
+  /*box-shadow: 0 0 30px rgba(0,0,0,0.568);*/
+  color: black;
 }
+
+.form-control{
+  /*background: rgba(0,0,0,.3);*/
+  border-radius: 3px;
+  outline: none;
+  /*box-shadow: rgb(21, 21, 139) ;*/
+  color:black;
+  /*transition: 0.5s ease-in;*/
+}
+
+/*.form-control:focus{
+  background: none;
+  box-shadow: none;
+}*/
+.form-control::placeholder{
+  /*color: white;*/
+}
+
 .btn-primary {
   background-color:  #06503a;
   border: 0;
   padding: 10px;
   font-size: 16px;
   font-weight: 700!important;
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.568);
+  transition: 0.5s ease-in;
+}
+.btn-primary:hover {
   color: white;
 }
