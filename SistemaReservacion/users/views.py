@@ -4,6 +4,7 @@ from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm
 
 from django.contrib.auth import authenticate, login, logout
+from django.urls import NoReverseMatch, reverse
 
 from django.contrib import messages
 from users.forms import createdUserForm
@@ -32,9 +33,13 @@ def loginPage(request):
         
         if user is not None:
             login(request, user)
-            return redirect('')
+            return redirect('Registro')
         else:
             messages.info(request, 'Nombre de usuario o contraseña incorrecta')
 
     context = {}
     return render(request, 'users/login.html', context)
+
+def logoutUser(request):
+    logout(request)
+    return redirect('Login')
