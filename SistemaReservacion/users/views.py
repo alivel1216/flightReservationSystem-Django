@@ -7,6 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 
 from django.contrib import messages
 from users.forms import createdUserForm
+from ReservacionesApp.urls import urlpatterns
 # Create your views here.
 
 def registro(request):
@@ -17,7 +18,7 @@ def registro(request):
             form.save()
             user = form.cleaned_data.get('username')
             messages.success(request, 'Se creo una cuenta para ' + user)
-            return redirect('Login')
+            
             
     context = {'form':form}
     return render(request, 'users/registro.html', context)
@@ -30,8 +31,10 @@ def loginPage(request):
         user = authenticate(request, username=username, password=password)
         
         if user is not None:
-            login(user)
+            login(request, user)
             return redirect('')
+        else:
+            messages.info(request, 'Nombre de usuario o contraseña incorrecta')
 
     context = {}
     return render(request, 'users/login.html', context)
