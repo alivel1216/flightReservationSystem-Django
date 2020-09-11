@@ -6,9 +6,9 @@ from users.forms import createdUserForm
 # Create your views here.
 
 def registro(request):
-    form =  UserCreationForm()
+    form =  createdUserForm()
     if request.method =='POST':
-        form = UserCreationForm(request.POST)
+        form = createdUserForm(request.POST)
         if form.is_valid():
             form.save()
             

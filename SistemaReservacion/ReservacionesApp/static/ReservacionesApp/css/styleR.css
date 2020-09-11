@@ -1,0 +1,23 @@
+body {
+  background-image: url(../img/españa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #06503a;
+}
+
+.formulario {
+  background:rgba(0, -0, -0, -1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,-0,-0,-0, -0.568);
+  color: white;
+}
+.btn-primary {
+  background-color:  #06503a;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700!important;
+  color: white;
+}

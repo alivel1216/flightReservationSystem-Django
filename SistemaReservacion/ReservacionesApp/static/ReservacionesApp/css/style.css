@@ -76,11 +76,3 @@ a:hover {
     }
   }
  
-.abs-center {
-  /*display: flex;*/
-  align-items: center;
-  justify-content: center;
-  /*padding-right: 60px;*/
-  margin-left: 320px;
-  width: 500px;
-}
