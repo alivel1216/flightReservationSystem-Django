@@ -1,6 +1,7 @@
 from django.db import models
 from django import forms
 from django.forms import ModelForm
+from django.contrib.auth.models import User
 # Create your models here.
 
 COUNTRIES = [
@@ -19,12 +20,19 @@ COUNTRIES = [
 
 
 class Reservar(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=False)
     adultos = models.IntegerField()
     niños = models.IntegerField()
     nombre = models.CharField(max_length=50)
     paisOrigen = models.CharField(max_length=30,
     choices=COUNTRIES)
     fechaNacimiento = models.DateField()
+    class Meta:
+        verbose_name='reserva'
+        verbose_name_plural='reservas'
+
+    def __str__(self):
+        return self.nombre
 
 class ReservarForm(ModelForm):
     class Meta:

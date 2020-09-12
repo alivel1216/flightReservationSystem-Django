@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     return render(request, 'ReservacionesApp/index.html')
 
+@login_required(login_url='Login')
 def reservaciones(request):
     form = ReservarForm()
     if request.method == 'POST':
