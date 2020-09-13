@@ -20,7 +20,7 @@ COUNTRIES = [
 
 
 class Reservar(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE,)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     adultos = models.IntegerField()
     niños = models.IntegerField()
     nombre = models.CharField(max_length=50)

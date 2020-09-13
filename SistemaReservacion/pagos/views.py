@@ -2,9 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from .models import PagarForm
-#from PagosApp.models import PagarForm
 
-# Create your views here.
+ #Create your views here.
 @login_required(login_url='Login')
 def pagos(request):
     form = PagarForm()

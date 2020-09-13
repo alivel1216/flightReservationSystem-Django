@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'pagos.apps.PagosConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ReservacionesApp',
     'VuelosApp',
-    #'pagos',
-    'users'
+    'users',
+    'pagos',
 ]
 
 MIDDLEWARE = [

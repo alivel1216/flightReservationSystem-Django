@@ -1,7 +1,7 @@
 from django.db import models
 from django import forms
 from django.forms import ModelForm
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
 from ReservacionesApp.models import Reservar
 
 TYPE_PAY = [
@@ -11,7 +11,7 @@ TYPE_PAY = [
 # Create your models here.
 
 class Pagar(models.Model):
-    usuario = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
+    #usuario = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     reservacion = models.OneToOneField(Reservar, on_delete=models.CASCADE)
     tipo_pago = models.CharField(max_length=30)
     name_prop = models.CharField(max_length=30)
