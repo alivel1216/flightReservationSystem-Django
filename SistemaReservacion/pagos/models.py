@@ -11,7 +11,7 @@ TYPE_PAY = [
 # Create your models here.
 
 class Pagar(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    usuario = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     reservacion = models.OneToOneField(Reservar, on_delete=models.CASCADE)
     tipo_pago = models.CharField(max_length=30)
     name_prop = models.CharField(max_length=30)
@@ -20,6 +20,8 @@ class Pagar(models.Model):
 
     def __str__(self):
         return self.name_prop
+
+#class cliente(models.Model):
 
 class PagarForm(ModelForm):
     class Meta:

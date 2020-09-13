@@ -1,11 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from ReservacionesApp.models import ReservarForm
-from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
-@login_required(login_url='Login')
 def home(request):
     return render(request, 'ReservacionesApp/index.html')
 
